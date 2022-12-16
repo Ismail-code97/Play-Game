@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/overlay.css" />
+    <link rel="stylesheet" href="./styles/player-config.css" />
+
+    <script src="./scripts/config.js" defer></script>
+    <script src="./scripts/games.js" defer></script>
+    <script src="./scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <header class="main-header">
+      <h1>Play Game</h1>
+    </header>
+    <main>
+      <aside id="player-details" class="modal">
+        <h2>Choose Your Name</h2>
+        <form action="/" method="GET">
+          <div class="your-name">
+            <label for="player-name">Your Name</label>
+            <input type="text" name="player-name" id="player-name" />
+          </div>
+          <p id="error-output"></p>
+          <div>
+            <button type="reset" class="btn btn-alt" id="cancel-btn">
+              Cancel
+            </button>
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+      </aside>
+      <section id="player-configuration">
+        <ol class="player-boxes">
+          <li>
+            <article id="player-1-data">
+              <h3>Player 1</h3>
+              <h2>PLAYER NAME</h2>
+              <p class="player-symbol">X</p>
+              <button class="btn btn-alt" id="player-1-btn" data-playerid="1">
+                Edit
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <article id="player-2-data">
+              <h3>Player 2</h3>
+              <h2>PLAYER NAME</h2>
+              <p class="player-symbol">O</p>
+              <button class="btn btn-alt" id="player-2-btn" data-playerid="2">
+                Edit
+              </button>
+            </article>
+          </li>
+        </ol>
+
+        <div>
+          <button class="btn" id="start-game">Start New Game</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

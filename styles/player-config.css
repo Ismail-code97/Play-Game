@@ -1,0 +1,58 @@
+.modal {
+  text-align: center;
+}
+
+.modal h2 {
+  margin: 0.5rem 0;
+}
+
+.your-name label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.your-name input {
+  padding: 0.25rem;
+  width: 15rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+#player-configuration {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.player-boxes {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.player-boxes li {
+  list-style: none;
+  margin: 1rem;
+  padding: 1rem;
+  width: 50%;
+  background-color: #d5bdaf;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.player-symbol {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.error input {
+  background-color: red;
+  border-color: red;
+}
+
+.error label {
+  color: red;
+}
